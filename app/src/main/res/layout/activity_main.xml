@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+    <!--Main button-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:id="@+id/mainbutton"
+        app:backgroundTint="@color/gray"
+        app:fabSize="normal"
+        app:tint="@null"
+        app:srcCompat="@drawable/ic_mangolib"/>
+
+    <!--Mini buttons-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="75dp"
+        android:layout_marginEnd="24dp"
+        app:backgroundTint="@color/gray"
+        android:visibility="visible"
+        app:fabSize="mini"
+        app:tint="@color/white"
+        app:srcCompat="@drawable/ic_baseline_home_24"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="120dp"
+        android:layout_marginEnd="24dp"
+        app:backgroundTint="@color/gray"
+        android:visibility="visible"
+        app:fabSize="mini"
+        app:tint="@null"
+        app:srcCompat="@drawable/ic_baseline_news_24"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="165dp"
+        android:layout_marginEnd="24dp"
+        app:backgroundTint="@color/gray"
+        android:visibility="visible"
+        app:fabSize="mini"
+        app:tint="@null"
+        app:srcCompat="@drawable/ic_baseline_question_answer_24"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="210dp"
+        android:layout_marginEnd="24dp"
+        app:backgroundTint="@color/gray"
+        android:visibility="visible"
+        app:fabSize="mini"
+        app:tint="@null"
+        app:srcCompat="@drawable/ic_random"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
